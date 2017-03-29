@@ -8,10 +8,10 @@ with open('yiyang_splited.txt', 'r') as inputfile:
       score = 0
       p = 0
       for index,string in enumerate(reversed(temp)):
-        if string.endswith(('跟_p','像_v')):
+        if string.endswith(('跟_p')):
           p = 1
         if string.endswith(('_v', '_n')):
-          score += 1
+          score = 1
         if index > 7:
           break
 

@@ -5,7 +5,7 @@ from scipy.stats import pearsonr
 inputs = []
 result = []
 
-with open('yiyang_to_fit.txt', 'r') as inputfile:
+with open('si_to_fit.txt', 'r') as inputfile:
   for line in inputfile:
     i, r = line.split('\t')
     inputs.append(int(i))
@@ -15,6 +15,6 @@ inputs = np.array(inputs)
 
 result = np.array(result)
 
-ra = pearsonr(inputs, result)
+r = pearsonr(inputs, result)
 
-print(ra)
+print(r)
