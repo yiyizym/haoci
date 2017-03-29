@@ -14,7 +14,6 @@ with open('yiyang_to_fit.txt', 'r') as inputfile:
 inputs = np.array(inputs)
 
 result = np.array(result)
-print(inputs)
 
 ra = pearsonr(inputs, result)
 
