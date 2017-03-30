@@ -1,7 +1,7 @@
 all_lines = 0
 bingo_lines = 0
 t = 0
-with open('yiyang_extracted.txt', 'r') as inputfile:
+with open('weicheng_with_improved_tag.txt', 'r') as inputfile:
   for line in inputfile:
     all_lines += 1
     if line.endswith('1\n'):
