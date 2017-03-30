@@ -9,8 +9,8 @@ class Match_ru(object):
   def __init__(self):
     pass
 
-  def predict(self, line):
-    words = pseg.cut(line)
+  def predict(self, sentence):
+    words = pseg.cut(sentence)
     words = self.filteredcuts(words)
     score = 0
     if words == '':
@@ -38,8 +38,8 @@ class Match_si(object):
   def __init__(self):
     pass
 
-  def predict(self, line):
-    words = pseg.cut(line)
+  def predict(self, sentence):
+    words = pseg.cut(sentence)
     words = self.filteredcuts(words)
     score = 0
     i = -1
@@ -80,8 +80,8 @@ class Match_xiang(object):
   def __init__(self):
     pass
 
-  def predict(self,line):
-    words = pseg.cut(line)
+  def predict(self,sentence):
+    words = pseg.cut(sentence)
     words = self.filteredcuts(words)
     length = len(words)
     score = 0
@@ -121,8 +121,8 @@ class Match_fang(object):
   def __init__(self):
     pass
 
-  def predict(self, line):
-    words = pseg.cut(line)
+  def predict(self, sentence):
+    words = pseg.cut(sentence)
     words = self.filteredcuts(words)
     score = 0
     if words == '':
@@ -146,8 +146,8 @@ class Match_hao(object):
   def __init__(self):
     pass
 
-  def predict(self, line):
-    words = pseg.cut(line)
+  def predict(self, sentence):
+    words = pseg.cut(sentence)
     words = self.filteredcuts(words)
     score = 0
     if words == '':
@@ -168,8 +168,8 @@ class Match_yiyang(object):
   def __init__(self):
     pass
 
-  def predict(self, line):
-    words = pseg.cut(line)
+  def predict(self, sentence):
+    words = pseg.cut(sentence)
     words = self.filteredcuts(words)
     score = 0
     try:
