@@ -33,7 +33,7 @@ with open('weicheng.txt', 'r') as inputfile:
     for line in inputfile:
       line = re.sub(r'\s', '', line)
       for sentence in re.findall(reg, line):
-        if len(sentence) > 1:
+        if len(sentence) > 0:
           sentence = sentence + '\t' + str(predict(sentence)) + '\n'
           output_string += sentence
     outputfile.write(output_string)
